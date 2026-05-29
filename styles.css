@@ -334,6 +334,35 @@ p {
     margin-bottom: 28px;
 }
 
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+    page-break-before: always;
+    page-break-inside: avoid;
+}
+
+.product-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 12px;
+    text-align: left;
+    page-break-inside: avoid;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 8px;
+}
+
 /* Executive Tables (LaTeX / Scientific Style) */
 .table-wrapper {
     width: 100%;

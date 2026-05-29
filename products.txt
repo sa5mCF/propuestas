@@ -1,0 +1,65 @@
+* NPX
+
+The NPX product family includes 4-button and 10-button convenience paging stations with either a handheld or gooseneck microphone for use in Tesira® or Qt X systems. All models feature embedded DSP, onboard memory to support standard and advanced public address functionalities and meet convenience paging requirements for facilities of all sizes. Digital audio and control data are transmittable by either AVB or Dante®.
+
+Push-to-talk button with status indication
+Up to 4 user-configured page codes (1040 models only)
+Up to 999 user-configured page codes (1100 models only)
+Up to 16 software configurable priority paging levels
+Supports stored message play back (up to 10 messages)
+50 minute recording pool for all 10 messages
+Dante® is a registered trademark of Audinate
+
+
+* ALC-1604D
+
+Amplified Loudspeaker Controller with 4 Channels X 1600W + DSP, Dante support and includes US/EU/UK power plugs.
+
+Key Features
+
+Output power optimized to match the needs of Community loudspeakers from Biamp
+Drive low impedance, 70 volt or 100 volt loudspeakers on any channel
+Fast and easy access to complete Community loudspeaker library
+1024 Tap FIR Linear Phase DSP loudspeaker processing
+Factory-optimized multi-stage loudspeaker protection limiters
+Power Sharing technology allows asymmetric output loading
+Biamp’s loudspeaker presets allow software to automatically calculate and display power needs and headroom for each ALC output channel
+Easily configured system control for small-to-medium venues
+Third-party plug-ins for large venue control
+Quickly create and manage loudspeaker groups/zones and signal routing
+IEC 60849 compliant monitoring and reporting via software and hardware
+5-year warranty
+Compliant with the US Trade Agreement Act (TAA)
+
+* Biamp CCA-80D
+
+Deliver powerful, intelligible sound across long aisles and concourses—without the complexity or cost of traditional solutions.
+
+Key Features
+
+Ensure consistent, intelligible audio in long, narrow spaces – the asymmetric vertical waveguide provides constant coverage with up to a 6:1 throw ratio.
+Maintain even sound levels from front to back – constant-coverage design eliminates the SPL drop-off common in traditional loudspeakers.
+Deliver both clarity and richness – the full-range three-way triaxial design covers 115 Hz – 14 kHz for exceptional voice paging and music playback.
+Reduce installation and equipment costs – dual loudspeaker options offer flexible mounting and can cut total system cost by over 50% versus premium alternatives.
+Deploy efficiently in large venues – integrated 70V/100V transformers simplify wiring and support scalable, cost-effective system expansion.
+Cover every zone with minimal aiming – the downward-tilted horn ensures uniform coverage directly beneath the speaker, even at mounting heights up to 36 feet.
+Design with confidence before installation – Biamp Audition in Warehouse Designer lets you visualize coverage, simulate sound, and fine-tune placement virtually.
+Invest with confidence – the Commercial CCA-80 is backed by a comprehensive 5-year warranty.
+
+
+* R.15-3696 
+
+3-way, full-range, grey, weather-resistant loudspeaker.
+
+Key Features
+
+Full-range background music and clearly intelligible voice paging
+Ideal for sports field applications, stadium concourses, warehouses, gymnasiums, and other similar highly reverberant spaces
+High sensitivity and low amplifier power draw reduces total system costs
+Weather-resistant, compact, matte finish paintable high impact ABS plastic modified-trapezoidal enclosure
+Water-resistant grille and LF driver cone, polymer HF and MR diaphragm, moisture-sealed crossover
+100W Autoformer (standard), selectable 4 ohm or 70V/100V operation
+Corrosion-resistant zinc-plated, powder-coated low-profile steel yoke and grill
+5-year product warranty and a 15-year enclosure warranty
+Compliant with the US Trade Agreement Act (TAA)
+

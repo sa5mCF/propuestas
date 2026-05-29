@@ -1,0 +1,172 @@
+PORTADA
+
+DISEÑO DE SISTEMA DE VOCEO Y PAGING
+Centro de Distribución [NOMBRE DEL CLIENTE]
+
+Ingeniería Electroacústica Predictiva
+Simulación SPL / STI
+
+Elaborado por:
+[Nombre de tu empresa]
+
+Fecha: [FECHA]
+
+Revisión: Rev. A
+
+1. OBJETIVO DEL PROYECTO
+
+El presente documento describe la propuesta de diseño electroacústico para el sistema de voceo y paging del Centro de Distribución, considerando criterios de cobertura sonora, uniformidad e inteligibilidad de voz para aplicaciones de anuncios operativos y comunicación interna.
+
+La ingeniería fue desarrollada mediante simulación acústica predictiva utilizando el software EASE, evaluando niveles de presión sonora (SPL) y Speech Transmission Index (STI), con base en la geometría y características acústicas representativas del recinto.
+
+La solución propuesta contempla una arquitectura AV-over-IP basada en plataforma Biamp Tesira y distribución de audio digital mediante protocolo Dante sobre infraestructura de red convergente.
+
+2. ALCANCE
+
+El alcance de esta ingeniería contempla los siguientes conceptos:
+
+Distribución y orientación de altavoces.
+Simulación electroacústica predictiva.
+Análisis de cobertura SPL.
+Análisis de inteligibilidad STI.
+Diagramas generales del sistema.
+Planos de distribución de altavoces.
+Recomendación de equipos principales.
+Definición general de arquitectura AV-over-IP.
+Requerimientos generales de infraestructura de red para Dante.
+
+No se consideran dentro del presente alcance:
+
+Ingeniería eléctrica de alimentación.
+Cálculo estructural de soportes.
+Programación DSP final.
+Puesta en marcha y commissioning.
+Ingeniería de sistemas contra incendio.
+Certificaciones normativas.
+Configuración de infraestructura IT corporativa.
+
+3. DESCRIPCIÓN GENERAL DEL SISTEMA
+
+El sistema propuesto consiste en una solución de voceo distribuido sobre infraestructura AV-over-IP utilizando plataforma Biamp Tesira como núcleo de procesamiento y control.
+
+La arquitectura contempla distribución de audio digital mediante protocolo Dante sobre red convergente, integrando estaciones de voceo Biamp NPX para anuncios operativos y comunicación interna dentro del Centro de Distribución.
+
+La solución de altavoces fue desarrollada utilizando línea distribuida de 100V para optimizar transmisión de potencia en largas distancias, reducir pérdidas por cableado y facilitar escalabilidad futura del sistema.
+
+Para áreas interiores se contemplan altavoces Biamp CCA-80D configurados a 50W en línea 100V, seleccionados por sus características de cobertura asimétrica y control de directividad, permitiendo mejorar la inteligibilidad de voz y uniformidad sonora en espacios de gran volumen y altura elevada.
+
+Para áreas exteriores se consideran altavoces Biamp R.15-3696 configurados a 100W en línea 100V, proporcionando cobertura de alta directividad para aplicaciones de paging exterior y anuncios operativos en ambientes industriales.
+
+El sistema de amplificación contempla amplificadores Biamp ALC-1604D, proporcionando capacidad de potencia, escalabilidad y headroom operativo adecuados para aplicaciones de paging industrial continuo.
+
+Los altavoces fueron distribuidos estratégicamente considerando:
+
+Altura de montaje aproximada de 11 metros.
+Cobertura longitudinal de pasillos y áreas operativas.
+Minimización de reflexiones excesivas.
+Uniformidad de presión sonora.
+Optimización de inteligibilidad STI.
+Escalabilidad futura del sistema.
+
+4. CRITERIOS DE DISEÑO
+
+El diseño del sistema fue desarrollado priorizando la inteligibilidad de voz sobre el nivel de presión sonora absoluto, considerando que la aplicación principal corresponde a paging y anuncios operativos en entorno industrial.
+
+Para el desarrollo de la simulación y distribución del sistema se consideraron los siguientes criterios:
+
+Cobertura uniforme en áreas operativas.
+Optimización de Speech Transmission Index (STI).
+Control de directividad mediante altavoces asimétricos.
+Minimización de energía acústica reflejada hacia techo y superficies laterales.
+Distribución uniforme de presión sonora.
+Escalabilidad futura del sistema.
+Arquitectura distribuida
+mediante línea 100V.
+Integración sobre infraestructura Dante y plataforma Tesira.
+
+Las simulaciones electroacústicas fueron desarrolladas considerando materiales representativos del inmueble, incluyendo:
+
+Piso de concreto.
+Muros reflectivos.
+Cubierta tipo multipanel.
+Elementos de dispersión asociados a racks y mobiliario industrial.
+
+5. ARQUITECTURA DE RED Y AUDIO
+
+El sistema de audio será implementado sobre infraestructura de red convergente utilizando protocolo Dante para distribución de audio digital entre procesadores, estaciones de voceo y sistemas de amplificación.
+
+La infraestructura de red deberá cumplir con los siguientes requerimientos mínimos:
+
+Soporte para tráfico multicast.
+Configuración QoS (Quality of Service).
+Soporte Gigabit Ethernet.
+VLAN dedicada o segmentación recomendada para tráfico AV.
+Baja latencia y estabilidad de red.
+Compatibilidad con sincronización PTP para Dante.
+
+Se recomienda que la infraestructura de red destinada al sistema AV sea validada previo a la implementación para garantizar desempeño adecuado del sistema de audio distribuido.
+
+6. INFRAESTRUCTURA DE CABLEADO
+
+El sistema de altavoces será implementado mediante cableado tipo 2x14 AWG para distribución en línea 100V.
+
+La topología de distribución fue desarrollada considerando:
+
+Distancias de cableado.
+Potencia distribuida por zona.
+Minimización de pérdidas.
+Escalabilidad futura.
+Facilidad de mantenimiento.
+
+Cada línea de altavoces contempla grupos de hasta 12 altavoces Biamp CCA-80D configurados a 50W en línea 100V.
+
+7. RESULTADOS DE SIMULACIÓN SPL
+
+La simulación SPL fue desarrollada en banda ancha considerando la distribución propuesta de altavoces y las condiciones geométricas del recinto.
+
+Parámetro Resultado
+SPL Promedio 85.6 dB
+SPL Máximo 98.8 dB
+SPL Mínimo 76.9 dB
+Desviación Estándar 2.7 dB
+
+Los resultados obtenidos muestran una cobertura uniforme dentro de las áreas operativas consideradas, manteniendo niveles adecuados para aplicaciones de voceo industrial y anuncios operativos.
+
+[INSERTAR MAPA SPL]
+
+8. RESULTADOS DE SIMULACIÓN STI
+
+Se realizó análisis de inteligibilidad mediante Speech Transmission Index (STI), considerando las condiciones acústicas representativas del recinto y el comportamiento electroacústico del sistema propuesto.
+
+Parámetro Resultado
+STI Promedio 0.594
+STI Máximo 0.827
+STI Mínimo 0.454
+Desviación Estándar 0.064
+
+Los resultados obtenidos indican un desempeño adecuado para aplicaciones de paging y comunicación operativa en entornos industriales, manteniendo condiciones aceptables de inteligibilidad de voz dentro de las áreas cubiertas por el sistema.
+
+[INSERTAR MAPA STI]
+
+[INSERTAR HISTOGRAMA STI]
+
+9. EQUIPOS PRINCIPALES PROPUESTOS
+
+Equipo Descripción
+Procesamiento DSP Biamp Tesira
+Estaciones de voceo Biamp NPX
+Amplificación Biamp ALC-1604D
+Altavoz interior Biamp CCA-80D
+Altavoz exterior Biamp R.15-3696
+Distribución de audio Dante
+Cableado de altavoz 2x14 AWG
+10. CONCLUSIONES
+
+Con base en las simulaciones electroacústicas realizadas, el sistema propuesto presenta una cobertura uniforme y niveles adecuados de inteligibilidad para aplicaciones de voceo y paging dentro del Centro de Distribución.
+
+La selección de altavoces con patrón de cobertura controlado permitió optimizar la relación entre sonido directo y campo reverberante, mejorando las condiciones de inteligibilidad en comparación con soluciones convencionales de cobertura amplia.
+
+Los resultados obtenidos mediante simulación predictiva SPL y STI indican que el sistema propuesto es técnicamente viable para las necesidades operativas del proyecto.
+
+La implementación sobre infraestructura Dante y plataforma Tesira permite una arquitectura escalable y flexible para futuras ampliaciones, integración de nuevas estaciones de voceo y monitoreo centralizado del sistema.
+

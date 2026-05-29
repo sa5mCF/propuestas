@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary: #090A0C;        /* Pure obsidian black for absolute authority */
-    --accent: #2563EB;         /* Deep corporate cobalt */
-    --text: #27272A;           /* Charcoal gray for readable, low-strain body text */
-    --text-light: #52525B;     /* Muted gray for subtitles and non-essential specs */
-    --text-muted: #71717A;     /* Softest slate gray for footers, table headers */
-    --border: #E4E4E7;         /* Thin, elegant divider lines */
-    --border-strong: #090A0C;  /* Thick structural emphasis lines */
-    --bg-surface: #FFFFFF;     /* Pure white page background */
-    --bg-shaded: #F8F9FA;      /* Subtle off-white for highlighted sections */
-    
+    --primary: #090A0C;
+    /* Pure obsidian black for absolute authority */
+    --accent: #2563EB;
+    /* Deep corporate cobalt */
+    --text: #27272A;
+    /* Charcoal gray for readable, low-strain body text */
+    --text-light: #52525B;
+    /* Muted gray for subtitles and non-essential specs */
+    --text-muted: #71717A;
+    /* Softest slate gray for footers, table headers */
+    --border: #E4E4E7;
+    /* Thin, elegant divider lines */
+    --border-strong: #090A0C;
+    /* Thick structural emphasis lines */
+    --bg-surface: #FFFFFF;
+    /* Pure white page background */
+    --bg-shaded: #F8F9FA;
+    /* Subtle off-white for highlighted sections */
+
     --font-display: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
@@ -22,7 +31,8 @@
 body {
     font-family: var(--font-body);
     color: var(--text);
-    background-color: #D4D4D8; /* Slate gray desk background for contrast in browser */
+    background-color: #D4D4D8;
+    /* Slate gray desk background for contrast in browser */
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -36,7 +46,8 @@ body {
     width: 210mm;
     height: 297mm;
     margin: 50px auto;
-    padding: 35mm 25mm 25mm 25mm; /* Extremely generous executive margins */
+    padding: 35mm 25mm 25mm 25mm;
+    /* Extremely generous executive margins */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -204,7 +215,8 @@ body {
 /* Headings and Typography Hierarchy */
 h2 {
     font-family: var(--font-display);
-    font-size: 1.05rem; /* Elegant smaller uppercase header */
+    font-size: 1.05rem;
+    /* Elegant smaller uppercase header */
     font-weight: 700;
     color: var(--primary);
     text-transform: uppercase;
@@ -227,7 +239,8 @@ h2 .sec-index {
 p {
     font-family: var(--font-body);
     font-size: 0.92rem;
-    line-height: 1.75; /* Ultra high-end spacious line-height */
+    line-height: 1.75;
+    /* Ultra high-end spacious line-height */
     margin-top: 0;
     margin-bottom: 24px;
     color: var(--text);
@@ -391,13 +404,38 @@ td strong {
     font-family: var(--font-display);
 }
 
+/* Premium Math Block Styling (LaTeX style) */
+.math-block {
+    background-color: var(--bg-shaded);
+    border: 1px dashed var(--border);
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: var(--font-display);
+    text-align: center;
+}
+
+.math-formula {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.math-step {
+    font-size: 0.88rem;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
 /* Print and page breaks */
 @media print {
     body {
         background-color: #FFFFFF;
         color: #000000;
     }
-    
+
     .page {
         margin: 0;
         box-shadow: none;
@@ -407,11 +445,11 @@ td strong {
         page-break-inside: avoid;
         padding: 30mm 22mm 20mm 22mm;
     }
-    
+
     .page.cover {
         padding: 40mm 25mm 25mm 25mm;
     }
-    
+
     .table-wrapper,
     .visual-container,
     .callout-box,

@@ -122,15 +122,93 @@ Cada línea de altavoces contempla grupos de hasta 12 altavoces Biamp CCA-80D co
 
 7. RESULTADOS DE SIMULACIÓN SPL
 
-La simulación SPL fue desarrollada en banda ancha considerando la distribución propuesta de altavoces y las condiciones geométricas del recinto.
+La distribución y orientación de altavoces fue desarrollada considerando la geometría del recinto, altura de montaje, cobertura longitudinal requerida y características de directividad de los dispositivos seleccionados.
 
-Parámetro Resultado
-SPL Promedio 85.6 dB
-SPL Máximo 98.8 dB
-SPL Mínimo 76.9 dB
-Desviación Estándar 2.7 dB
+Para áreas interiores se utilizaron altavoces Biamp CCA-80D configurados a 50W en línea 100V, instalados a una altura aproximada de 11 metros.
 
-Los resultados obtenidos muestran una cobertura uniforme dentro de las áreas operativas consideradas, manteniendo niveles adecuados para aplicaciones de voceo industrial y anuncios operativos.
+La inclinación vertical de los altavoces fue definida en aproximadamente 15° respecto al plano horizontal, con el objetivo de:
+
+Maximizar energía directa sobre áreas operativas.
+Reducir excitación excesiva de techo y superficies reflectivas.
+Optimizar cobertura longitudinal.
+Mejorar la relación entre sonido directo y campo reverberante.
+Incrementar condiciones de inteligibilidad STI.
+
+La selección de altavoces con cobertura asimétrica permitió extender el alcance efectivo longitudinal del sistema, concentrando energía acústica sobre zonas operativas y reduciendo dispersión innecesaria hacia superficies laterales y superiores.
+
+Cálculo teórico de SPL — Áreas interiores
+
+El cálculo teórico de presión sonora fue desarrollado utilizando sensibilidad nominal del altavoz y potencia aplicada en línea 100V.
+
+Para altavoces Biamp CCA-80D:
+
+Sensibilidad nominal: 98 dB @1W/1m
+Potencia configurada: 50W
+
+El nivel teórico máximo de presión sonora corresponde a:
+
+SPL=Sensibilidad+10log (Potencia)
+
+
+SPL=98+10log(50)
+
+
+
+SPL≈115 dB @1m
+
+
+
+Atenuación por distancia — Cobertura longitudinal
+
+La pérdida por propagación fue considerada mediante ley del inverso del cuadrado:
+
+ΔSPL=20log (distancia)
+
+
+Para una distancia aproximada de cobertura longitudinal de 35 metros:
+
+20log (35)≈30.9 dB
+
+
+
+Por lo tanto, el nivel teórico aproximado al final de cobertura corresponde a:
+
+115−30.9≈84 dB
+
+
+
+Debido a las características de cobertura asimétrica del altavoz CCA-80D, el comportamiento real presenta mejor conservación de energía longitudinal en comparación con sistemas convencionales de cobertura simétrica, permitiendo mantener niveles útiles de presión sonora a mayores distancias.
+
+Los resultados teóricos obtenidos presentan correlación adecuada con las simulaciones electroacústicas realizadas en EASE.
+
+ COBERTURA EXTERIOR
+
+Para áreas exteriores se contemplan altavoces Biamp R.15-3696 configurados a 100W en línea 100V, instalados a una altura aproximada de 3 metros.
+
+La inclinación vertical fue desarrollada considerando cobertura efectiva sobre áreas de tránsito y operación exterior, minimizando dispersión innecesaria hacia áreas no operativas.
+
+Considerando una distancia objetivo aproximada de cobertura horizontal de 15 metros, la inclinación vertical teórica corresponde a:
+
+θ=tan−1(3/15​)    
+  𝜃≈11.3∘
+Por criterios prácticos de instalación y optimización de cobertura, se recomienda inclinación aproximada entre 10° y 15°.
+
+Cálculo teórico de SPL — Áreas exteriores
+
+Para altavoces Biamp R.15-3696:
+
+Sensibilidad nominal: 103 dB @1W/1m
+Potencia configurada: 100W
+
+El nivel teórico máximo de presión sonora corresponde a:
+
+SPL=103+10log(100)
+
+
+
+SPL≈123 dB @1m
+
+La selección de altavoces de alta sensibilidad y directividad controlada permite mantener cobertura adecuada para aplicaciones de paging exterior y anuncios operativos en ambientes industriales abiertos
 
 [INSERTAR MAPA SPL]
 

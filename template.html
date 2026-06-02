@@ -311,8 +311,40 @@
                     <div class="math-step">&theta; &asymp; 11.3&deg; &nbsp; (Recomendado: 10&deg; a 15&deg;)</div>
                 </div>
 
-                <p style="font-weight: 500; color: var(--primary); margin-bottom: 8px;">Cálculo teórico de SPL — Áreas
+                <p style="margin-top: 30px; font-weight: 500; color: var(--primary); margin-bottom: 8px;">Cálculo
+                    teórico de SPL — Áreas
                     exteriores</p>
+
+                <div class="grid-2" style="gap: 12px; grid-template-columns: repeat(1, 1fr); margin-top: 10px;">
+                    <div class="visual-container" style="padding: 6px; margin-bottom: 0; justify-content: center;">
+                        <img src="assets/spl/spl1.png" alt="Simulación SPL 1"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
+                            1.1: Cobertura SPL</span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <span class="confidential">Confidencial - STAV Electronica</span>
+            <span>Página 7</span>
+        </footer>
+    </div>
+
+    <!-- PAGINA 8: MAPAS DE SIMULACIÓN SPL (DEDICADA) -->
+    <div class="page">
+        <header class="page-header">
+            <span class="brand">Direcsa</span>
+            <span class="doc-info">SISTEMA DE VOCEO Y PAGING | Rev. A</span>
+        </header>
+
+        <main>
+            <section>
+                <p>A continuación se detallan los mapas de presión sonora (SPL) predictivos calculados para las
+                    diferentes zonas del Centro de Distribución mediante simulación acústica tridimensional EASE:</p>
+
                 <p>Para altavoces R.15-3696 con sensibilidad nominal de 103 dB @1W/1m configurados a 100W, el nivel
                     teórico máximo se define por:</p>
 
@@ -350,152 +382,25 @@
                     </table>
                 </div>
 
+                <p style="margin-top: 35px;">La predicción de niveles de presión sonora (SPL) demuestra una cobertura
+                    uniforme dentro de las áreas
+                    operativas consideradas para el sistema de paging.
+                </p>
 
-                <!-- Custom Vector Simulated SPL Acoustic Map -->
-                <!--
-                <div class="visual-container">
-                    <svg viewBox="0 0 700 130" width="100%" height="auto"
-                        style="border-radius: 4px; background: #FFFFFF;">
-                        <g opacity="0.08">
-                            <line x1="0" y1="20" x2="700" y2="20" stroke="#000000" stroke-width="0.8" />
-                            <line x1="0" y1="40" x2="700" y2="40" stroke="#000000" stroke-width="0.8" />
-                            <line x1="0" y1="60" x2="700" y2="60" stroke="#000000" stroke-width="0.8" />
-                            <line x1="0" y1="80" x2="700" y2="80" stroke="#000000" stroke-width="0.8" />
-                            <line x1="0" y1="100" x2="700" y2="100" stroke="#000000" stroke-width="0.8" />
-                            <line x1="50" y1="0" x2="50" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="100" y1="0" x2="100" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="150" y1="0" x2="150" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="200" y1="0" x2="200" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="250" y1="0" x2="250" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="300" y1="0" x2="300" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="350" y1="0" x2="350" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="400" y1="0" x2="400" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="450" y1="0" x2="450" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="500" y1="0" x2="500" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="550" y1="0" x2="550" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="600" y1="0" x2="600" y2="130" stroke="#000000" stroke-width="0.8" />
-                            <line x1="650" y1="0" x2="650" y2="130" stroke="#000000" stroke-width="0.8" />
-                        </g>
+                <p>La distribución de altavoces y su orientación fueron desarrolladas
+                    considerando altura de montaje,
+                    cobertura longitudinal y control de directividad, permitiendo mantener niveles adecuados de presión
+                    sonora sobre las áreas de operación del Centro de Distribución.
+                </p>
 
-                        <rect x="20" y="10" width="660" height="110" fill="none" stroke="#090A0C" stroke-width="1.8" />
+                <p>Los resultados obtenidos muestran niveles promedio cercanos a 85 dB SPL, manteniendo variaciones
+                    controladas dentro del recinto y permitiendo condiciones adecuadas para reproducción de mensajes
+                    operativos y anuncios de paging.
+                </p>
 
-                        <circle cx="150" cy="50" r="50" fill="rgba(9, 10, 12, 0.05)" />
-                        <circle cx="150" cy="50" r="25" fill="rgba(9, 10, 12, 0.08)" />
-
-                        <circle cx="350" cy="50" r="50" fill="rgba(9, 10, 12, 0.05)" />
-                        <circle cx="350" cy="50" r="25" fill="rgba(9, 10, 12, 0.08)" />
-
-                        <circle cx="550" cy="50" r="50" fill="rgba(9, 10, 12, 0.05)" />
-                        <circle cx="550" cy="50" r="25" fill="rgba(9, 10, 12, 0.08)" />
-
-                        <g fill="#090A0C" stroke="#ffffff" stroke-width="1.2">
-                            <circle cx="150" cy="50" r="3.5" />
-                            <circle cx="350" cy="50" r="3.5" />
-                            <circle cx="550" cy="50" r="3.5" />
-                        </g>
-
-                        <g transform="translate(480, 85)">
-                            <rect x="0" y="0" width="180" height="8" fill="none" stroke="#090A0C" stroke-width="0.8" />
-                            <rect x="1" y="1" width="44" height="6" fill="#090A0C" />
-                            <rect x="45" y="1" width="44" height="6" fill="#27272A" />
-                            <rect x="89" y="1" width="44" height="6" fill="#52525B" />
-                            <rect x="133" y="1" width="46" height="6" fill="#A1A1AA" />
-
-                            <text x="0" y="16" font-size="6" fill="#090A0C" font-family="Inter" font-weight="600">95
-                                dB</text>
-                            <text x="90" y="16" font-size="6" fill="#090A0C" font-family="Inter" font-weight="600"
-                                text-anchor="middle">85 dB</text>
-                            <text x="180" y="16" font-size="6" fill="#090A0C" font-family="Inter" font-weight="600"
-                                text-anchor="end">75 dB</text>
-                        </g>
-
-                        <text x="35" y="100" font-size="7" fill="#090A0C" font-family="Inter" font-weight="700"
-                            letter-spacing="0.02em">MAPA DE PRESIÓN SONORA (SPL) - EASE PREDICTIVE</text>
-                    </svg>
-                    <span class="visual-caption">Figura 1: Mapeo de Nivel de Presión Sonora (SPL) predictivo a lo largo
-                        del plano industrial.</span>
-                </div>
-                -->
-            </section>
-        </main>
-
-        <footer class="page-footer">
-            <span class="confidential">Confidencial - STAV Electronica</span>
-            <span>Página 7</span>
-        </footer>
-    </div>
-
-    <!-- PAGINA 8: MAPAS DE SIMULACIÓN SPL (DEDICADA) -->
-    <div class="page">
-        <header class="page-header">
-            <span class="brand">Direcsa</span>
-            <span class="doc-info">SISTEMA DE VOCEO Y PAGING | Rev. A</span>
-        </header>
-
-        <main>
-            <section>
-                <h2><span class="sec-index">07 /</span> MAPAS DE SIMULACIÓN SPL - PLANOS DE INGENIERÍA</h2>
-                <p>A continuación se detallan los mapas de presión sonora (SPL) predictivos calculados para las
-                    diferentes zonas del Centro de Distribución mediante simulación acústica tridimensional EASE:</p>
-
-                <div class="grid-2" style="gap: 12px; grid-template-columns: repeat(2, 1fr); margin-top: 10px;">
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl1.png" alt="Simulación SPL 1"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.1: Cobertura SPL - Sector Norte</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl2.png" alt="Simulación SPL 2"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.2: Cobertura SPL - Sector Central</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl3.png" alt="Simulación SPL 3"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.3: Cobertura SPL - Sector Sur</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl4.png" alt="Simulación SPL 4"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.4: Cobertura SPL - Pasillos Operativos</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl5.png" alt="Simulación SPL 5"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.5: Cobertura SPL - Área de Racks A</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl6.png" alt="Simulación SPL 6"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.6: Cobertura SPL - Área de Racks B</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl7.png" alt="Simulación SPL 7"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.7: Cobertura SPL - Zona de Embarques</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 95px; justify-content: center;">
-                        <img src="assets/spl/spl8.png" alt="Simulación SPL 8"
-                            style="width: 100%; height: 60px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            1.8: Cobertura SPL - Zona de Recepción</span>
-                    </div>
-                </div>
+                <p>La utilización de altavoces con patrón de cobertura asimétrico permitió optimizar la distribución de
+                    energía acústica sobre áreas útiles, reduciendo dispersión innecesaria hacia techo y superficies
+                    reflectivas.</p>
             </section>
         </main>
 
@@ -517,6 +422,20 @@
                 <h2><span class="sec-index">08 /</span> RESULTADOS DE SIMULACIÓN STI</h2>
                 <p>Se realizó análisis de inteligibilidad mediante Speech Transmission Index (STI), considerando las
                     condiciones acústicas del recinto y el comportamiento electroacústico de la solución propuesta:</p>
+
+
+                <section>
+                    <div class="grid-2" style="gap: 12px; grid-template-columns: repeat(1, 1fr); margin-top: 10px;">
+                        <div class="visual-container" style="padding: 6px; margin-bottom: 0; justify-content: center;">
+                            <img src="assets/sti/Ease0003.png" alt="Simulación SPL 1"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                            <span class="visual-caption"
+                                style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
+                                2.1: Cobertura STI</span>
+                        </div>
+
+                    </div>
+                </section>
 
                 <div class="table-wrapper" style="margin-bottom: 16px;">
                     <table>
@@ -547,18 +466,52 @@
                     </table>
                 </div>
 
-                <div class="grid-2" style="gap: 12px; grid-template-columns: repeat(2, 1fr);">
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 110px; justify-content: center;">
-                        <img src="assets/sti/Ease0001.png" alt="Simulación STI 1"
-                            style="width: 100%; height: 75px; object-fit: contain;">
-                        <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
-                            2.1: Cobertura STI - Plano General</span>
-                    </div>
-                    <div class="visual-container"
-                        style="padding: 6px; margin-bottom: 0; min-height: 110px; justify-content: center;">
-                        <img src="assets/sti/Ease0002.png" alt="Simulación STI 2"
-                            style="width: 100%; height: 75px; object-fit: contain;">
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <span class="confidential">Confidencial - STAV Electronica</span>
+            <span>Página 10</span>
+        </footer>
+    </div>
+
+
+    <!-- PAGINA 11: Imagenes de sti -->
+    <div class="page">
+        <header class="page-header">
+            <span class="brand">Direcsa</span>
+            <span class="doc-info">SISTEMA DE VOCEO Y PAGING | Rev. A</span>
+        </header>
+
+        <main>
+            <section>
+                <p style="margin-top: 30px;">La predicción STI (Speech Transmission Index) demuestra condiciones
+                    adecuadas de inteligibilidad
+                    para
+                    aplicaciones de voceo y paging industrial dentro del recinto.
+                </p>
+
+                <p>El diseño fue desarrollado priorizando la relación entre sonido directo y campo reverberante,
+                    utilizando
+                    altavoces de cobertura controlada y criterios de orientación orientados a mejorar la claridad de voz
+                    dentro de espacios de gran volumen y altura elevada.
+                </p>
+
+                <p>Los resultados obtenidos muestran valores promedio STI de 0.594, considerados adecuados para
+                    aplicaciones de comunicación operativa en entornos industriales, permitiendo una correcta
+                    reproducción e
+                    interpretación de mensajes de voz dentro de las áreas cubiertas por el sistema.
+                </p>
+
+                <p>
+                    La uniformidad observada en la distribución STI valida los criterios de cobertura, separación y
+                    orientación implementados durante el desarrollo de la ingeniería electroacústica
+                </p>
+                <div class="grid-2" style="gap: 12px; grid-template-columns: repeat(1, 1fr); margin-top: 10px;">
+
+                    <div class="visual-container" style="padding: 6px; margin-bottom: 0; justify-content: center;">
+                        <img src="assets/sti/histograma_sti.png" alt="Simulación SPL 1"
+                            style="width: 100%; height: 100%; object-fit: contain;">
                         <span class="visual-caption" style="font-size: 0.65rem; margin-top: 4px; font-weight: 600;">Fig
                             2.2: Cobertura STI - Planta Alta</span>
                     </div>
@@ -659,21 +612,50 @@
                     <div class="product-card">
                         <img src="assets/products/CCA-80D.png" alt="Biamp CCA‑80D" class="product-image" />
                         <div class="product-desc">
-                            <strong>Altavoz interior CCA‑80D</strong>: Altavoz de rango completo tridireccional
-                            (115 Hz‑14 kHz) con guía vertical asimétrica (relación 6:1) que brinda cobertura constante
-                            en pasillos largos. Diseño de tres vías triaxial para voz clara y música, integrado con
-                            transformadores 70 V/100 V, reduce costos de instalación y permite montaje flexible. Horn
-                            inclinado para cobertura uniforme hasta 36 ft, compatible con simulación Audition.
+                            <<<<<<< HEAD <strong>Altavoz interior CCA‑80D</strong>: Altavoz de rango completo
+                                tridireccional
+                                (115 Hz‑14 kHz) con guía vertical asimétrica (relación 6:1) que brinda cobertura
+                                constante
+                                en pasillos largos. Diseño de tres vías triaxial para voz clara y música, integrado con
+                                transformadores 70 V/100 V, reduce costos de instalación y permite montaje flexible.
+                                Horn
+                                inclinado para cobertura uniforme hasta 36 ft, compatible con simulación Audition.
+                                =======
+                                <strong>Altavoz interior CCA‑80D</strong>:
+                                <p style="font-size: 10px;">
+                                    Altavoz de rango completo tridireccional
+                                    (115 Hz‑14 kHz) con guía vertical asimétrica (relación 6:1) que brinda cobertura
+                                    constante
+                                    en pasillos largos. Diseño de tres vías triaxial para voz clara y música, integrado
+                                    con
+                                    transformadores 70 V/100 V, reduce costos de instalación y permite montaje flexible.
+                                    compatible con simulación Audition.
+                                </p>
+                                >>>>>>> 78aa0ce (feat: final rev A)
                         </div>
                     </div>
                     <div class="product-card">
                         <img src="assets/products/R15-3696.png" alt="Biamp R.15‑3696" class="product-image" />
                         <div class="product-desc">
-                            <strong>Altavoz exterior R.15‑3696</strong>: Altavoz de 3 vías, gris, resistente a la
-                            intemperie, ideal para campos deportivos y almacenes. Proporciona música de fondo y voz
-                            inteligible, alta sensibilidad con bajo consumo, envoltura ABS polítrica, rejilla resistente
-                            al agua, auto‑transformador 100 W (4 Ω o 70 V/100 V), chasis zincado y pintura en polvo,
-                            garantía de 5 años + 15 años en la caja.
+                            <<<<<<< HEAD <strong>Altavoz exterior R.15‑3696</strong>: Altavoz de 3 vías, gris,
+                                resistente a la
+                                intemperie, ideal para campos deportivos y almacenes. Proporciona música de fondo y voz
+                                inteligible, alta sensibilidad con bajo consumo, envoltura ABS polítrica, rejilla
+                                resistente
+                                al agua, auto‑transformador 100 W (4 Ω o 70 V/100 V), chasis zincado y pintura en polvo,
+                                garantía de 5 años + 15 años en la caja.
+                                =======
+                                <strong>Altavoz exterior R.15‑3696</strong>:
+                                <p style="font-size: 10px;">
+                                    Altavoz de 3 vías, gris, resistente a la
+                                    intemperie, ideal para campos deportivos y almacenes. Proporciona música de fondo y
+                                    voz
+                                    inteligente, alta sensibilidad con bajo consumo, envoltura ABS polítrica, rejilla
+                                    resistente
+                                    al agua, auto‑transformador 100 W (4 Ω o 70 V/100 V), chasis zincado y pintura en
+                                    polvo.
+                                </p>
+                                >>>>>>> 78aa0ce (feat: final rev A)
                         </div>
                     </div>
                 </div>

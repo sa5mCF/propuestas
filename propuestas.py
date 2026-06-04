@@ -1,25 +1,40 @@
 import os
+from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
+def render_html():
+    base_dir = Path(__file__).parent.absolute()
+    env = Environment(loader=FileSystemLoader(base_dir / "templates"))
+    template = env.get_template("proposal.html")
+    
+    base_dir = Path(__file__).parent.absolute()
+    assets_dir = base_dir / "assets"
+
+    return template.render(
+        title="Proposal", 
+        content="AV proposal",
+        assets_path=assets_dir.as_uri()
+        )
+
+
 def main():
     base_dir = Path(__file__).parent.absolute()
-    template_file = base_dir / "template.html"
-    output_dir = base_dir / "output"
-    output_dir.mkdir(exist_ok=True)
+    html_content = render_html()
     
-    if not template_file.exists():
-        print(f"Error: {template_file} not found.")
-        return
         
     print("Generating PDF via Playwright...")
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         # Use A4 screen resolution ratio for rendering
         page = browser.new_page(viewport={"width": 794, "height": 1123})
-        page.goto(f"file://{template_file}", wait_until="networkidle")
         
-        pdf_path = output_dir / "proposal.pdf"
+        page.set_content(html_content, wait_until="networkidle")
+
+        css_path = base_dir / "static" / "styles.css"
+        page.add_style_tag(path=str(css_path))
+
+        pdf_path = base_dir / "output" / "proposal.pdf"
         page.pdf(
             path=str(pdf_path),
             format="A4",

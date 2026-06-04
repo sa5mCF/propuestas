@@ -1,0 +1,54 @@
+    <!-- PAGINA 6: RESULTADOS SPL - INTERIOR -->
+    <div class="page">
+        <header class="page-header">
+            <span class="brand">Direcsa</span>
+            <span class="doc-info">SISTEMA DE VOCEO Y PAGING | Rev. A</span>
+        </header>
+
+        <main>
+            <section style="margin-bottom: 24px;">
+                <h2><span class="sec-index">07 /</span> RESULTADOS DE SIMULACIÓN SPL Y CÁLCULO ACÚSTICO</h2>
+                <p>La distribución y orientación de altavoces fue desarrollada considerando la geometría del recinto,
+                    altura de montaje, cobertura longitudinal requerida y características de directividad de los
+                    dispositivos seleccionados.</p>
+                <p>Para áreas interiores se utilizaron altavoces Biamp CCA-80D configurados a 50W en línea 100V,
+                    instalados a una altura aproximada de 11 metros.</p>
+                <p>La inclinación vertical de los altavoces fue definida en aproximadamente 15° respecto al plano
+                    horizontal, con el objetivo de maximizar la energía directa sobre áreas operativas, reducir la
+                    excitación excesiva de techo y superficies reflectivas, optimizar la cobertura longitudinal y
+                    mejorar la relación entre sonido directo y campo reverberante.</p>
+
+                <p style="font-weight: 500; color: var(--primary); margin-bottom: 8px;">Cálculo teórico de SPL — Áreas
+                    interiores</p>
+                <p>El cálculo teórico de presión sonora fue desarrollado utilizando la sensibilidad nominal del altavoz
+                    y la potencia aplicada en línea 100V. Para los altavoces Biamp CCA-80D configurados a 50W
+                    (sensibilidad de 98 dB @1W/1m), el nivel teórico máximo corresponde a:</p>
+
+                <div class="math-block">
+                    <div class="math-formula"><i>SPL</i> = Sensibilidad + 10 &middot; log<sub>10</sub>(Potencia)</div>
+                    <div class="math-formula"><i>SPL</i> = 98 + 10 &middot; log<sub>10</sub>(50)</div>
+                    <div class="math-step"><i>SPL</i> &asymp; 115 dB @ 1m</div>
+                </div>
+
+                <p style="font-weight: 500; color: var(--primary); margin-bottom: 8px;">Atenuación por distancia —
+                    Cobertura longitudinal</p>
+                <p>La pérdida por propagación en campo libre se calculó mediante la ley del inverso del cuadrado. Para
+                    una distancia de cobertura de 35 metros:</p>
+
+                <div class="math-block">
+                    <div class="math-formula">&Delta;<i>SPL</i> = 20 &middot; log<sub>10</sub>(distancia)
+                        &nbsp;&rightarrow;&nbsp; 20 &middot; log<sub>10</sub>(35) &asymp; 30.9 dB</div>
+                    <div class="math-step"><i>SPL</i><sub>final</sub> = 115 &minus; 30.9 &asymp; 84 dB</div>
+                </div>
+
+                <p>Debido a la directividad controlada del altavoz CCA-80D, el comportamiento real conserva mejor la
+                    energía longitudinal en comparación con sistemas de cobertura simétrica convencional, manteniendo un
+                    nivel de presión sonora muy uniforme.</p>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <span class="confidential">Confidencial - STAV Electronica</span>
+            <span>Página 6</span>
+        </footer>
+    </div>

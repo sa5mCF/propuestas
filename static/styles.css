@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #090A0C;
+    /* Pure obsidian black for absolute authority */
+    --accent: #2563EB;
+    /* Deep corporate cobalt */
+    --text: #27272A;
+    /* Charcoal gray for readable, low-strain body text */
+    --text-light: #52525B;
+    /* Muted gray for subtitles and non-essential specs */
+    --text-muted: #71717A;
+    /* Softest slate gray for footers, table headers */
+    --border: #E4E4E7;
+    /* Thin, elegant divider lines */
+    --border-strong: #090A0C;
+    /* Thick structural emphasis lines */
+    --bg-surface: #FFFFFF;
+    /* Pure white page background */
+    --bg-shaded: #F8F9FA;
+    /* Subtle off-white for highlighted sections */
+
+    --font-display: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background-color: #D4D4D8;
+    /* Slate gray desk background for contrast in browser */
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* Page Layout - Strict A4 standard */
+.page {
+    background-color: var(--bg-surface);
+    width: 210mm;
+    height: 297mm;
+    margin: 50px auto;
+    padding: 35mm 25mm 25mm 25mm;
+    /* Extremely generous executive margins */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 25px 50px -12px rgba(9, 10, 12, 0.15);
+    overflow: hidden;
+}
+
+/* Page Indicator Details */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+}
+
+.page-header .brand {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.page-header .doc-info {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+    margin-top: auto;
+    font-weight: 500;
+}
+
+.page-footer .confidential {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.65rem;
+}
+
+/* PAGINA DE PORTADA (Aesthetic Editorial Cover) */
+.page.cover {
+    padding: 45mm 30mm 30mm 30mm;
+}
+
+.cover-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.cover-brand {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cover-brand-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.cover-main {
+    margin-top: 10px;
+    border-left: 2px solid var(--primary);
+    padding-left: 32px;
+}
+
+.cover-tagline {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.cover-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.12;
+    color: var(--primary);
+    margin: 0 0 24px 0;
+    letter-spacing: -0.04em;
+}
+
+.cover-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.cover-meta {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 48px;
+    border-top: 1px solid var(--border);
+    padding-top: 36px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-title {
+    font-family: var(--font-display);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.meta-desc {
+    font-size: 0.95rem;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Headings and Typography Hierarchy */
+h2 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    /* Elegant smaller uppercase header */
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 0;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1.5px solid var(--primary);
+    padding-bottom: 8px;
+}
+
+h2 .sec-index {
+    color: var(--text-light);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    /* Ultra high-end spacious line-height */
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--text);
+    text-align: justify;
+}
+
+/* Premium Highlighted Blockquote (Notion-style Callout but much cleaner) */
+.callout-box {
+    background-color: var(--bg-shaded);
+    border-left: 2px solid var(--primary);
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    border-radius: 4px;
+}
+
+.callout-box p {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* Structured technical grids and lists */
+.list-technical {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.list-technical.grid-split {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 36px;
+}
+
+.list-technical li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 0.88rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.list-technical li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+/* Muted visual elements for exclusions */
+.list-excluded {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 36px;
+}
+
+.list-excluded li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 0.86rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.list-excluded li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: #DC2626;
+    font-weight: 700;
+    font-size: 0.72rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+    page-break-before: always;
+    page-break-inside: avoid;
+}
+
+.product-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 12px;
+    text-align: left;
+    page-break-inside: avoid;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Executive Tables (LaTeX / Scientific Style) */
+.table-wrapper {
+    width: 100%;
+    margin-bottom: 28px;
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.86rem;
+    text-align: left;
+}
+
+th {
+    font-family: var(--font-display);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 12px 14px;
+    border-bottom: 1.5px solid var(--primary);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) td {
+    background-color: var(--bg-shaded);
+}
+
+td strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Architectural Simulation Diagrams */
+.visual-container {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visual-caption {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 14px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-family: var(--font-display);
+}
+
+/* Premium Math Block Styling (LaTeX style) */
+.math-block {
+    background-color: var(--bg-shaded);
+    border: 1px dashed var(--border);
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: var(--font-display);
+    text-align: center;
+}
+
+.math-formula {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.math-step {
+    font-size: 0.88rem;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+/* Print and page breaks */
+@media print {
+    body {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        page-break-after: always;
+        page-break-inside: avoid;
+        padding: 30mm 22mm 20mm 22mm;
+    }
+
+    .page.cover {
+        padding: 40mm 25mm 25mm 25mm;
+    }
+
+    .table-wrapper,
+    .visual-container,
+    .callout-box,
+    .grid-2,
+    h2 {
+        page-break-inside: avoid;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}

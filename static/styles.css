@@ -236,6 +236,29 @@ h2 .sec-index {
     letter-spacing: 0.05em;
 }
 
+h4 {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    /* Elegant smaller uppercase header */
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 0;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+    /* border-bottom: 1.5px solid var(--primary); */
+    /* padding-bottom: 8px; */
+}
+
+h4 .sec-index {
+    color: var(--text-light);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
 p {
     font-family: var(--font-body);
     font-size: 0.82rem;

@@ -1,4 +1,5 @@
 import os
+import base64
 from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
 from playwright.sync_api import sync_playwright
@@ -34,9 +35,7 @@ def render_html():
     assets_dir = base_dir / "assets"
 
     return template.render(
-        title="Proposal", 
-        content="AV proposal",
-        assets_path=assets_dir.as_uri()
+            images=images_dict(base_dir / "assets")
         )
 
 

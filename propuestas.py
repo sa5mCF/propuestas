@@ -22,7 +22,8 @@ def images_dict(base_dir: Path):
         "spl2": get_image_as_base64(base_dir / "spl" / "spl2.png"),
         "spl3": get_image_as_base64(base_dir / "spl" / "spl3.png"),
         "cca_80d": get_image_as_base64(base_dir / "products" / "CCA-80D.png"),
-        "r15_3696": get_image_as_base64(base_dir / "products" / "R15-3696.png")
+        "r15_3696": get_image_as_base64(base_dir / "products" / "R15-3696.png"),
+        "slxd": get_image_as_base64(base_dir / "products" / "slxd.png")
     }
 
 

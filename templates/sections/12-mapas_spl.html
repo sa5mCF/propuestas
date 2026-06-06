@@ -1,76 +1,78 @@
-    <!-- PAGINA 8: MAPAS DE SIMULACIÓN SPL (DEDICADA) -->
-    <div class="page">
-        <header class="page-header">
-            <span class="brand">Direcsa</span>
-            <span class="doc-info">SISTEMA DE VOCEO Y PAGING | Rev. A</span>
-        </header>
+<!-- PAGINA 8: MAPAS DE SIMULACIÓN SPL (DEDICADA) -->
+<div class="page">
+    <header class="page-header">
+        <span class="brand">Direcsa</span>
+        <span class="doc-info">SISTEMA DE VOCEO Y PAGING | Rev. A</span>
+    </header>
 
-        <main>
-            <section>
-                <p>A continuación se detallan los mapas de presión sonora (SPL) predictivos calculados para las
-                    diferentes zonas del Centro de Distribución mediante simulación acústica tridimensional EASE:</p>
+    <main>
+        <section>
+            <p style="margin-top: 35px;">La predicción de niveles de presión sonora (SPL) demuestra una cobertura
+                uniforme dentro de las áreas
+                operativas consideradas para el sistema de paging.
+            </p>
 
-                <p>Para altavoces R.15-3696 con sensibilidad nominal de 103 dB @1W/1m configurados a 100W, el nivel
-                    teórico máximo se define por:</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parámetro Acústico (Simulación SPL)</th>
+                            <th>Valor de Simulación (dB)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>SPL Promedio</strong></td>
+                            <td style="font-weight: 700; color: var(--primary);">85.6 dB</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SPL Máximo</strong></td>
+                            <td style="font-weight: 700; color: var(--primary);">98.8 dB</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SPL Mínimo</strong></td>
+                            <td style="font-weight: 700; color: var(--primary);">76.9 dB</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Desviación Estándar</strong></td>
+                            <td style="font-weight: 700; color: var(--primary);">2.7 dB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                <div class="math-block">
-                    <div class="math-formula"><i>SPL</i> = 103 + 10 &middot; log<sub>10</sub>(100)</div>
-                    <div class="math-step"><i>SPL</i> &asymp; 123 dB @ 1m</div>
-                </div>
+            <p>La distribución de altavoces y su orientación fueron desarrolladas
+                considerando altura de montaje,
+                cobertura longitudinal y control de directividad, permitiendo mantener niveles adecuados de presión
+                sonora sobre las áreas de operación del Centro de Distribución.
+            </p>
 
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Parámetro Acústico (Simulación SPL)</th>
-                                <th>Valor de Simulación (dB)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>SPL Promedio</strong></td>
-                                <td style="font-weight: 700; color: var(--primary);">85.6 dB</td>
-                            </tr>
-                            <tr>
-                                <td><strong>SPL Máximo</strong></td>
-                                <td style="font-weight: 700; color: var(--primary);">98.8 dB</td>
-                            </tr>
-                            <tr>
-                                <td><strong>SPL Mínimo</strong></td>
-                                <td style="font-weight: 700; color: var(--primary);">76.9 dB</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Desviación Estándar</strong></td>
-                                <td style="font-weight: 700; color: var(--primary);">2.7 dB</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <p>Los resultados obtenidos muestran niveles promedio cercanos a 85 dB SPL, manteniendo variaciones
+                controladas dentro del recinto y permitiendo condiciones adecuadas para reproducción de mensajes
+                operativos y anuncios de paging.
+            </p>
 
-                <p style="margin-top: 35px;">La predicción de niveles de presión sonora (SPL) demuestra una cobertura
-                    uniforme dentro de las áreas
-                    operativas consideradas para el sistema de paging.
-                </p>
+            <p>La utilización de altavoces con patrón de cobertura asimétrico permitió optimizar la distribución de
+                energía acústica sobre áreas útiles, reduciendo dispersión innecesaria hacia techo y superficies
+                reflectivas.</p>
+        </section>
+        <section>
+            <h4><span class="sec-index">6.4 / </span>Inclinación Exterior</h4>
+            <p>
+                Altura: 3 m
+                <br>
+                Cobertura: 15 m
+                <br>
+            </p>
+            <div class="math-block">
+                <div class="math-formula">&theta; = tan<sup>&minus;1</sup>(15 / 3)</div>
+                <div class="math-step">&theta; &asymp; 11.3&deg; &nbsp; (Recomendado: 10° a 15°)</div>
+            </div>
+        </section>
+    </main>
 
-                <p>La distribución de altavoces y su orientación fueron desarrolladas
-                    considerando altura de montaje,
-                    cobertura longitudinal y control de directividad, permitiendo mantener niveles adecuados de presión
-                    sonora sobre las áreas de operación del Centro de Distribución.
-                </p>
-
-                <p>Los resultados obtenidos muestran niveles promedio cercanos a 85 dB SPL, manteniendo variaciones
-                    controladas dentro del recinto y permitiendo condiciones adecuadas para reproducción de mensajes
-                    operativos y anuncios de paging.
-                </p>
-
-                <p>La utilización de altavoces con patrón de cobertura asimétrico permitió optimizar la distribución de
-                    energía acústica sobre áreas útiles, reduciendo dispersión innecesaria hacia techo y superficies
-                    reflectivas.</p>
-            </section>
-        </main>
-
-        <footer class="page-footer">
-            <span class="confidential">Confidencial - STAV Electronica</span>
-            <span>Página 8</span>
-        </footer>
-    </div>
+    <footer class="page-footer">
+        <span class="confidential">Confidencial - STAV Electronica</span>
+        <span>Página 8</span>
+    </footer>
+</div>

@@ -25,6 +25,24 @@ def images_dict(base_dir: Path):
             "cca_80d": get_image_as_base64(base_dir / "propuesta1/products" / "CCA-80D.png"),
             "r15_3696": get_image_as_base64(base_dir / "propuesta1/products" / "R15-3696.png"),
             "slxd": get_image_as_base64(base_dir / "propuesta1/products" / "slxd.png"),
+        },
+        "propuesta2": {
+            "npx": get_image_as_base64(base_dir / "propuesta1/products" / "npx.jpg"),
+            "alc_1604d": get_image_as_base64(base_dir / "propuesta1/products" / "alc-1604d.png"),
+            "cca_80d": get_image_as_base64(base_dir / "propuesta1/products" / "CCA-80D.png"),
+            "r15_3696": get_image_as_base64(base_dir / "propuesta1/products" / "R15-3696.png"),
+            "slxd": get_image_as_base64(base_dir / "propuesta1/products" / "slxd.png"),
+            "cmx20t": get_image_as_base64(base_dir / "propuesta2/products" / "cmx20t.png"),
+            "mxwnext2": get_image_as_base64(base_dir / "propuesta2/products" / "mxwnext2.png"),
+            "p30dt": get_image_as_base64(base_dir / "propuesta2/products" / "p30dt.jpg"),
+            "voltera_a6002": get_image_as_base64(base_dir / "propuesta2/products" / "voltera-a600-2.png"),  
+            "spl1": get_image_as_base64(base_dir / "propuesta2/spl" / "spl1.jpeg"),
+            "spl2": get_image_as_base64(base_dir / "propuesta2/spl" / "spl2.jpeg"),
+            "spl3": get_image_as_base64(base_dir / "propuesta2/spl" / "spl3.jpeg"),
+            "histograma_spl": get_image_as_base64(base_dir / "propuesta2/spl" / "spl_histograma.jpeg"),
+            "sti": get_image_as_base64(base_dir / "propuesta2/sti" / "sti1.png"),
+            "sti2": get_image_as_base64(base_dir / "propuesta2/sti" / "sti2.png"),
+            "sti3": get_image_as_base64(base_dir / "propuesta2/sti" / "sti3.png"),
         }
     }
 
@@ -76,6 +94,7 @@ def generate_pdf(template_name: str, images_assets_name: str, out_file: str):
 
 def main():
     generate_pdf("propuesta1/proposal.html", "propuesta1", "proposal.pdf")
+    generate_pdf("propuesta2/proposal.html", "propuesta2", "proposal2.pdf")
 
 if __name__ == "__main__":
     main()

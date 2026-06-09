@@ -39,7 +39,7 @@ def images_dict(base_dir: Path):
             "spl1": get_image_as_base64(base_dir / "propuesta2/spl" / "spl1.jpeg"),
             "spl2": get_image_as_base64(base_dir / "propuesta2/spl" / "spl2.jpeg"),
             "spl3": get_image_as_base64(base_dir / "propuesta2/spl" / "spl3.jpeg"),
-            "histograma_spl": get_image_as_base64(base_dir / "propuesta2/spl" / "spl_histograma.jpeg"),
+            "histograma_sti": get_image_as_base64(base_dir / "propuesta2/sti" / "sti_histograma.jpeg"),
             "sti": get_image_as_base64(base_dir / "propuesta2/sti" / "sti1.png"),
             "sti2": get_image_as_base64(base_dir / "propuesta2/sti" / "sti2.png"),
             "sti3": get_image_as_base64(base_dir / "propuesta2/sti" / "sti3.png"),
